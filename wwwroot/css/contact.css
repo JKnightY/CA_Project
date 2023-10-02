@@ -1,0 +1,21 @@
+#header-wrapper{
+    background-color: gray;
+}
+IMG{
+    width: 10%;
+    height: 10%;
+}
+#content-wrapper{
+    background-color: aliceblue;
+}
+#footer-wapper{
+    background-color: brown;
+}
+footer{
+    background-color: aqua;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form{
+    text-align: center;
+}

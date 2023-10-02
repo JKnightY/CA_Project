@@ -1,0 +1,100 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Contact Page";
+}
+<div id="header-wrapper">
+    <header class="container">
+        <div id="logo">
+            <img src="img/whale1.png">
+            <h2>whale music</h2>
+        </div>
+    </header>
+</div>
+<div id="content-wrapper" class="container">
+    <article>
+        <section class="contacts">
+            <fieldset class="contact-form">
+                <legend class="form-subtitle">form</legend>
+                <form action="MAILTO:JKY2503212461@OUTLOOK.com" method="post" enctype="text/plain" id="contact">
+                    <div class="form-row">
+                        <label class="contact">
+                            <strong>Name:</strong>
+                            <input type="text" name="name" id="name" required="required" placeholder="Not NULL" autofocus="autofocus" class="contact-input">
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="contact"><strong>Gender:</strong></label>
+                        <label><input name="sex" type="radio" id="sex1" value="male" checked="checked">Male</label>
+                        <label><input name="sex" type="radio" id="sex2" value="female">Female</label>
+                    </div>
+                    <div class="form-row">
+                        <label class="contact">
+                            <strong>Age range:</strong>
+                            <select name="age" size="1" id="age">
+                                <option value="Under 18 years of age">Under 18 years of age</option>
+                                <option value="18-28 years old" selected="selected">18-28 years old</option>
+                                <option value="28-38 years old">28-38 years old</option>
+                                <option value="38-48 years old">38-48 years old</option>
+                                <option value="48-58 years old">48-58 years old</option>
+                                <option value="over 58 years of age">over 58 years of age</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="contact"><strong>The kind of music you like:</strong></label>
+                        <label><input type="checkbox" name="interest" value="pop" id="interest1" />pop</label>
+                        <label><input type="checkbox" name="interest" value="rock" id="interest2" />rock</label>
+                        <label><input type="checkbox" name="interest" value="folk" id="interest3" />folk</label>
+                        <label><input type="checkbox" name="interest" value="electronic" id="interest4" />electronic</label>
+                        <label><input type="checkbox" name="interest" value="jaze" id="interest5" />jaze</label>
+                        <label><input type="checkbox" name="interest" value="rap" id="interest6" />rap</label>
+                        <label><input type="checkbox" name="interest" value="classical" id="interest7" />classical</label>
+                        <label><input type="checkbox" name="interest" value="metal" id="interest8" />metal</label>
+
+                    </div>
+                    <div class="form-row">
+                        <label class="contact">
+                            <strong>E-mail:</strong>
+                            <input type="email" name="dzyj" id="dzyj" required="required" placeholder="Email format" class="contact-input">
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="contact">
+                            <strong>Telephone:</strong>
+                            <input type="text" name="telephone" id="telephone" required="required" pattern="^[0-9][0-9]{2,3}[-][0-9]{6,7}[0-9]$" placeholder="Not NULL" class="contact-input">
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="contact">
+                            <strong>ID number:</strong>
+                            <input type="text" name="idnumber" id="idnumber" required="required" class="contact-input" placeholder="Not NULL">
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="contact">
+                            <strong>The number of songs you want to recommend per day:</strong>
+                            <input type="number" name="Number of music that have been listened" id="Number of music that have been listened" required="required" class="contact-input">
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="contact">
+                            <strong>Remark:</strong>
+                            <textarea name="content" id="content" cols="20" rows="3" class="contact-input"></textarea>
+                        </label>
+                    </div>
+                    <div class="form-row-button">
+                        <input type="reset" value="Reset" class="send">&nbsp;
+                        <input type="submit" value="Submit" class="send">
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+    </article>
+</div>
+<div id="footer-wrapper">
+    <footer class="container">
+        Company contact details:2503212461@qq.com
+    </footer>
+</div>
